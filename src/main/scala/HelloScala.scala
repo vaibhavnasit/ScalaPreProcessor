@@ -21,7 +21,7 @@ object HelloScala {
     val my_count = counts.filter(_._2 >= 5000).sortBy(_._2)
 
     my_count.foreach(println)
-    System.out.println("Total words: " + my_count.count());
+    System.out.println("Total Words: " + my_count.count());
     //my_count.saveAsTextFile("/tmp/shakespeareWordCount")
   }
 }
