@@ -18,10 +18,10 @@ object HelloScala {
       .reduceByKey(_ + _)
 
     // Filter those words which are having more than 5000 occurrence
-    val my_count = counts.filter(_._2 >= 4000).sortBy(_._2)
+    val my_count = counts.filter(_._2 >= 3000).sortBy(_._2)
 
     my_count.foreach(println)
-    System.out.println("Total Words having more than 4000 occurrence: " + my_count.count());
+    System.out.println("Total Words having more than 3000 occurrence: " + my_count.count());
     //my_count.saveAsTextFile("/tmp/shakespeareWordCount")
   }
 }
